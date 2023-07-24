@@ -10,7 +10,7 @@ def generator(n):
     current = 2
     while count < n:
         flag = True
-        for i in range(2, current//2+1):
+        for i in range(2, current):
             if not current % i:
                 flag = False
         current += 1
