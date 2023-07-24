@@ -8,6 +8,6 @@ my_dictcomp = {my_str[i]: ord(my_str[i]) for i in range(len(my_str))}
 print(my_dictcomp)
 dict_iter = iter(my_dictcomp.items())
 for i in range(5):
-    print(next(dict_iter))
+    print(*next(dict_iter))
 
 
