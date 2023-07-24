@@ -11,4 +11,5 @@
 # print(my_dictcomp)
 
 # 2 способ
-print(my_dictcomp := {i: ord(i) for i in input('Введите строку: ')})
+from pprint import pprint
+pprint(my_dictcomp := {i: ord(i) for i in input('Введите строку: ')}, width=1)
