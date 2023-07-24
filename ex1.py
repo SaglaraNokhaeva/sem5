@@ -6,14 +6,21 @@
 # ✔четвертое и все возможные последующие числа
 #  хранятся в кортеже как значения второго ключа.
 
-dct = {}
-data = input('Введите числа через символ “/”: ').split('/')
+
 
 # 1 способ
+# dct = {}
+# data = input('Введите числа через символ “/”: ').split('/')
 # dct[data[1]] = data[0]
 # dct[data[2]] = data[3:]
 # print(dct)
 
 # 2 способ
-dct = {data[1]: data[0], data[2]: data[3:]}
-print(dct)
+# dct = {}
+# data = input('Введите числа через символ “/”: ').split('/')
+# dct = {data[1]: data[0], data[2]: data[3:]}
+# print(dct)
+
+# 3 способ
+a, b, c, *d = input('Введите числа через символ “/”: ').split('/')
+print(result := {b: a, c: d})
